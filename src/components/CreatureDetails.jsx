@@ -31,7 +31,7 @@ export default function CreatureDetails() {
     console.log({id});
 
     const fetchDetails = () => {
-        fetch(`http://acnhapi.com/v1/sea/${id}`)
+        fetch(`https://acnhapi.com/v1/sea/${id}`)
             .then(res => res.json())
             .then(data => setCreature(data))
     };
